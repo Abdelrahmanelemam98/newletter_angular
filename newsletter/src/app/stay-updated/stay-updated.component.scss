@@ -1,0 +1,107 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(34, 38, 59);
+
+  .inner-wrapper {
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .stay-update {
+      margin: 30px 0;
+
+      .inner-update {
+        h1 {
+          font-weight: bold;
+          font-size: 3rem; // Adjust font size for mobile
+          margin-bottom: 20px;
+          color: hsl(234, 29%, 20%);
+        }
+      }
+
+      .stay-update-dsec {
+        margin-bottom: 20px;
+        p {
+          font-size: 15px; // Adjust font size for mobile
+          font-weight: 600;
+          width: 100%;
+        }
+      }
+
+      .stay-update-feature {
+        margin-top: 50px;
+        h2 {
+          font-size: 14px; // Adjust font size for mobile
+          span {
+            img {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+
+      .stay-update-form {
+        margin-top: 30px;
+
+        .label-sectin-validation {
+          display: flex;
+          margin-bottom: -14px;
+          justify-content: space-between;
+          align-items: center;
+
+          .form-label {
+            font-size: 13px; // Adjust font size for mobile
+            font-weight: bold;
+            color: #333;
+          }
+
+          small {
+            font-size: 12px; // Adjust font size for mobile
+            color: hsl(4, 100%, 67%);
+            font-weight: bold;
+          }
+        }
+
+        .form-input {
+          border: 1px solid #908f8f;
+          padding: 13px 10px;
+          width: 100%;
+          border-radius: 7px;
+          margin-bottom: 20px;
+        }
+
+        .btn {
+          width: 100%;
+          border: 1px solid #333;
+          border-radius: 7px;
+          padding: 13px 10px;
+          color: hsl(0, 0%, 100%);
+          background-color: hsl(234, 29%, 20%);
+          font-size: 15px;
+          font-weight: 600;
+          transition: 0.3s ease-in-out;
+          outline: none;
+
+          &:hover {
+            background-color: hsl(4, 100%, 67%);
+            color: hsl(0, 0%, 100%);
+            border: 1px solid hsl(4, 100%, 67%);
+            box-shadow: -5px 2px 123px -24px hsl(4, 100%, 67%);
+            -webkit-box-shadow: -5px 2px 123px -24px hsl(4, 100%, 67%);
+            -moz-box-shadow: -5px 2px 123px -24px hsl(4, 100%, 67%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.invalid-input {
+  background-color: hsla(4, 91%, 75%, 0.499);
+  outline: hsl(4, 100%, 67%);
+}

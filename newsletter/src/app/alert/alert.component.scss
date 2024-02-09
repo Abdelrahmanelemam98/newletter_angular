@@ -1,0 +1,61 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(34, 38, 59);
+  .card {
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    margin: 20px 25px;
+    .card-img {
+      padding: 20px 0;
+    }
+    .card-title {
+      h1 {
+        font-size: 45px;
+        font-weight: bold;
+        color: hsl(234, 29%, 20%);
+      }
+    }
+    .card-desc {
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        span {
+          font-weight: bold;
+          color: hsl(234, 29%, 20%);
+        }
+      }
+    }
+    .card-dismiss {
+      width: 100%;
+      margin-bottom: 30px;
+      .btn {
+        width: 100%;
+        border: 1px solid #333;
+        border-radius: 7px;
+        padding: 13px 10px;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(234, 29%, 20%);
+        font-size: 15px;
+        font-weight: 600;
+        transition: 0.3s ease-in-out;
+        outline: none;
+        &:hover {
+          background-color: hsl(4, 100%, 67%);
+          color: hsl(0, 0%, 100%);
+          border: 1px solid hsl(4, 100%, 67%);
+
+          box-shadow: -5px 2px 123px -24px hsl(4, 100%, 67%);
+          -webkit-box-shadow: -5px 2px 123px -24px hsl(4, 100%, 67%);
+          -moz-box-shadow: -5px 2px 123px -24px hsl(4, 100%, 67%);
+        }
+      }
+    }
+  }
+}
